@@ -1,5 +1,9 @@
 package br.ufms.ufgl.core;
 
+/**
+ *
+ * @author Twister
+ */
 public class Util {
 	public static int pack(float r, float g, float b, float a) {
 		return (int)(a * 255.0f) << 24 |

@@ -4,6 +4,10 @@ import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
 import java.util.Arrays;
 
+/**
+ *
+ * @author Twister
+ */
 public class FrameBuffer {
 
 	private BufferedImage image;
@@ -35,6 +39,9 @@ public class FrameBuffer {
 		int r = (pixels[i] & 0x00FF0000) >> 16;
 		int g = (pixels[i] & 0x0000FF00) >> 8;
 		int b = (pixels[i] & 0x000000FF);
+		if (a < 0) {
+			a += 256;
+		}
 		GetColor.r = (float) r / 255.0f;
 		GetColor.g = (float) g / 255.0f;
 		GetColor.b = (float) b / 255.0f;

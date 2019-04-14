@@ -8,6 +8,10 @@ import java.awt.image.BufferStrategy;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/**
+ *
+ * @author Twister
+ */
 public class Window extends JFrame {
 
 	private final Canvas canvas;

@@ -1,5 +1,9 @@
 package br.ufms.ufgl.core;
 
+/**
+ *
+ * @author Twister
+ */
 public class Color {
 	public float r, g, b, a;
 
